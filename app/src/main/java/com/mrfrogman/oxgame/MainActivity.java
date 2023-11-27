@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         if (game_flg > 0){
             ImageButton imageButton = (ImageButton)v;
             String ContentDescription = (String) imageButton.getContentDescription();
-            String[] position = ContentDescription.split("");
+            String[] position = ContentDescription.split("(?<=.)");
             int[] selected = new int[2];
             selected[0] = Integer.parseInt(position[0]);
             selected[1] = Integer.parseInt(position[1]);
