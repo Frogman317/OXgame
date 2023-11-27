@@ -6,6 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/game_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:text="@string/game_start"/>
+
     <RelativeLayout
         android:id="@+id/masu"
         android:layout_width="300sp"
@@ -108,11 +117,29 @@
             android:onClick="onButton"
             android:contentDescription="@string/bottomRight" />
     </RelativeLayout>
-    <Button
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/playgame"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:onClick="onReset"
-        android:text="@string/reset" />
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/play1p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_1p_cpu"
+            android:onClick="play_game"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/play2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_2p_pvp"
+            android:onClick="play_game"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
 </LinearLayout>

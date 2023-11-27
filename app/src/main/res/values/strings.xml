@@ -11,4 +11,7 @@
     <string name="bottom">21</string>
     <string name="bottomRight">22</string>
     <string name="reset">リセット</string>
+    <string name="_1p_cpu">1P(CPU対戦)</string>
+    <string name="_2p_pvp">2P(PVP対戦)</string>
+    <string name="game_start">人数を選択してゲームスタート</string>
 </resources>
